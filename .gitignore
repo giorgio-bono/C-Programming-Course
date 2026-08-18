@@ -1,0 +1,55 @@
+# =========================
+# C / C++ build artifacts
+# =========================
+
+# Compiled executables
+*.out
+*.exe
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Static libraries
+*.a
+*.lib
+
+# Shared libraries
+*.so
+*.dll
+*.dylib
+
+# Debugging / profiling
+*.dSYM/
+*.stackdump
+
+# Build directories
+build/
+bin/
+obj/
+
+# =========================
+# IDE / Editor
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =========================
+# OS
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.log
