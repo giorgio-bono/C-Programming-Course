@@ -126,3 +126,15 @@ Il while è la struttura di ciclo che esegue un blocco di codice fin quando la c
 È stata usata per non dover usare goto o while per creare un loop di conteggio. Ogni volta che viene richiamata la funzione, viene creato di nuovo lo stack frame e vengono creati nuovamente nuovi parametri.
 
 # Lesson 7
+
+
+# Lesson 9
+Per dichiarare un puntatore devo aggiungere * prima del nome della variabile. Quindi la variabile si chiamerà solo col nome che troviamo successivamente ad *.
+Un puntatore inizializzato a 0 è punta ad un indirizzo nullo.
+
+# Lesson 10
+Dato il puntatore `p`, le operazioni `*p` o `p[0]` si chiamano **deferenziazione di p**. Deferenziare significa accedere ad un valore attraverso il suo indirizzo di memoria, quest'operazione può essere fatta sia in lettura che in scrittura.
+Il tipo ritornato dalla deferenziazione è relativo al modo in cui è stato dichiarato il puntatore.
+
+# Lesson 12
+I puntatori di tipo void sono puntatori a indirizzi di memoria generici che non sono legati ad alcun tipo di oggetto o struttura. Sono puntatori che posso assegnare a qualsiasi tipo di puntatore.
