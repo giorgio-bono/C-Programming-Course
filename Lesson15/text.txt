@@ -1,0 +1,8 @@
+# Lesson 15
+```
+int main(int argc, char **argv)
+```
+`argc` è il primo parametro del main che indica il numero di argomenti passati da command line quando eseguo il codice. 
+`argv` è un array contenente gli argomenti passati al moi programma sotto forma di stringhe.
+
+`fopen` ha bisogno di 2 parametri, la stringa contenente il nome del file e il metodo di apertura del file
