@@ -138,3 +138,31 @@ Il tipo ritornato dalla deferenziazione è relativo al modo in cui è stato dich
 
 # Lesson 12
 I puntatori di tipo void sono puntatori a indirizzi di memoria generici che non sono legati ad alcun tipo di oggetto o struttura. Sono puntatori che posso assegnare a qualsiasi tipo di puntatore.
+
+# Lesson 14
+Le strutture sono un tipo di dato aggregato e sono l'unico caso in cui nel C si esce fuori dall'idea di manipolare numeri. 
+
+Internal layout; 
++-+----+----+
+|c|num |den |
++-+----+----+
+Questo dovrebbe essere 9 byte ma in realtà è di 12 perché le strutture
+di default garantiscono che ogni membro della struttura sia registrato
+ad un multiplo della dimensione del suo tipo. e.g. int sarà ad un multiplo
+di 4. unsigned char sarà un byte di dato e 3 di padding. La struttura 
+deve essere allineata al tipo più grande che c'è al suo interno.
+Questo perché deve funzionare anche creassimo un array di tipo struct.
+
+Si può chiedere di gestire l'allocazione di memoria diversamente ma è una cosa che deve essere richiesta direttamente dal programmatore.
+
+## Passaggio di struttura per valore o riferimento
+Se una struttura viene ritornata da una funzione al main, ogni parametro della struttura verrà copiato nella variabile del main mentre questa copia esplicita non ci sarà se si utilizzano i puntatori. Questo rende il codice più efficiente. Non si ritornano quasi mai le strutture per valore.
+
+# Lesson 15
+```
+int main(int argc, char **argv)
+```
+`argc` è il primo parametro del main che indica il numero di argomenti passati da command line quando eseguo il codice. 
+`argv` è un array contenente gli argomenti passati al moi programma sotto forma di stringhe.
+
+`fopen` ha bisogno di 2 parametri, la stringa contenente il nome del file e il metodo di apertura del file
